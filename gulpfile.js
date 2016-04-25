@@ -31,7 +31,6 @@ var webpackStatsOptions = {
 gulp.task('webpack:components', function(done) {
     webpack({
             entry: {
-                'jupyter-js-output-area': './node_modules/jupyter-js-notebook/lib/output-area/index.js',
                 'jupyter-js-services': './node_modules/jupyter-js-services/lib/index.js',
                 'jupyter-js-widgets': ['./node_modules/jupyter-js-widgets/src/index.js'],
                 'ansi-parser': './node_modules/ansi-parser/lib/index.js'
@@ -49,7 +48,6 @@ gulp.task('webpack:components', function(done) {
                 'bootstrap',
                 'jquery',
                 'jquery-ui',
-                'jupyter-js-output-area',
                 'jupyter-js-services',
                 'jupyter-js-widgets',
                 {
